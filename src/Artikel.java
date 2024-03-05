@@ -9,25 +9,6 @@ public class Artikel {
         this.dimenzije = dimenzije;
     }
 
-    /*
-     * public String getNaziv() {
-     * return naziv;
-     * }
-     * 
-     * public void setNaziv(String naziv) {
-     * this.naziv = naziv;
-     * }
-     * 
-     * 
-     * 
-     * public void setDimenzije(Dimenzije dimenzije) {
-     * this.dimenzije = dimenzije;
-     * }
-     * 
-     * public double getTeza() {
-     * return teza;
-     * }
-     */
     public Dimenzije getDimenzije() {
         return dimenzije;
     }
