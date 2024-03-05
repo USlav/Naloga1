@@ -2,7 +2,6 @@ public class Depo {
     private String naziv;
 
     public Depo() {
-
     }
 
     public Depo(String naziv) {
