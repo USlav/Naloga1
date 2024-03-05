@@ -9,37 +9,35 @@ public class Artikel {
         this.dimenzije = dimenzije;
     }
 
-    public String getNaziv() {
-        return naziv;
-    }
-
-    public void setNaziv(String naziv) {
-        this.naziv = naziv;
-    }
-
+    /*
+     * public String getNaziv() {
+     * return naziv;
+     * }
+     * 
+     * public void setNaziv(String naziv) {
+     * this.naziv = naziv;
+     * }
+     * 
+     * 
+     * 
+     * public void setDimenzije(Dimenzije dimenzije) {
+     * this.dimenzije = dimenzije;
+     * }
+     * 
+     * public double getTeza() {
+     * return teza;
+     * }
+     */
     public Dimenzije getDimenzije() {
         return dimenzije;
-    }
-
-    public void setDimenzije(Dimenzije dimenzije) {
-        this.dimenzije = dimenzije;
-    }
-
-    public double getTeza() {
-        return teza;
     }
 
     public void setTeza(double teza) {
         this.teza = teza;
     }
 
-    public double getCena() {
-        return cena;
-    }
-
     public void setCena(double cena) {
         this.cena = cena;
     }
-
 
 }
