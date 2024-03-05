@@ -1,3 +1,5 @@
+package si.feri.opj.slavinec.razredi;
+
 public class Artikel {
     private String naziv;
     private Dimenzije dimenzije;
@@ -7,6 +9,12 @@ public class Artikel {
     public Artikel(String naziv, Dimenzije dimenzije) {
         this.naziv = naziv;
         this.dimenzije = dimenzije;
+    }
+
+    public Artikel(String naziv, Dimenzije dimenzije, double teza, double cena) {
+        this(naziv, dimenzije);
+        this.teza = teza;
+        this.cena = cena;
     }
 
     public Dimenzije getDimenzije() {

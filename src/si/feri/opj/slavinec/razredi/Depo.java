@@ -1,3 +1,5 @@
+package si.feri.opj.slavinec.razredi;
+
 public class Depo {
     private String naziv;
 

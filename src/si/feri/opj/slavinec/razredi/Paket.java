@@ -1,3 +1,5 @@
+package si.feri.opj.slavinec.razredi;
+
 import java.time.LocalDate;
 
 public class Paket {
