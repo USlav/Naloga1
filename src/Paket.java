@@ -18,4 +18,11 @@ public class Paket {
     public void setDragocenost(boolean dragocenost) {
         this.dragocenost = dragocenost;
     }
+
+    public String toString() {
+        return "Paket{" + "naziv='" + naziv + '\'' + ", dimenzije=" + dimenzije + ", dragocenost=" + dragocenost
+                + ", datumOdposlanja="
+                + datumOdposlanja + '}';
+
+    }
 }

@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class Zaboj {
     private String naziv;
@@ -67,4 +68,9 @@ public class Zaboj {
         return artikel.getDimenzije().izracunajVolumen() <= dimenzije.izracunajVolumen();
     }
 
+    public String toString() {
+        return "Zaboj{" + "naziv='" + naziv + '\'' + ", dimenzije=" + dimenzije + ", datumOdposlanja="
+                + datumOdposlanja + ", seznamArtiklov=" + Arrays.toString(seznamArtiklov) + '}';
+
+    }
 }

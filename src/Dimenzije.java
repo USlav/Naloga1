@@ -12,4 +12,8 @@ public class Dimenzije {
     public double izracunajVolumen() {
         return visina * sirina * dolzina;
     }
+
+    public String toString() {
+        return "Dimenzije{" + "visina=" + visina + ", sirina=" + sirina + ", dolzina=" + dolzina + '}';
+    }
 }

@@ -11,4 +11,8 @@ public class Depo {
     public void setNaziv(String naziv) {
         this.naziv = naziv;
     }
+
+    public String toString() {
+        return "Depo{naziv='" + naziv + "\'}";
+    }
 }

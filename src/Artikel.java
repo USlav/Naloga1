@@ -13,6 +13,10 @@ public class Artikel {
         return dimenzije;
     }
 
+    public String getNaziv() {
+        return naziv;
+    }
+
     public void setTeza(double teza) {
         this.teza = teza;
     }
@@ -21,4 +25,8 @@ public class Artikel {
         this.cena = cena;
     }
 
+    public String toString() {
+        return "Artikel{" + "naziv='" + naziv + '\'' + ", dimenzije=" + dimenzije + ", teza=" + teza + ", cena=" + cena
+                + '}';
+    }
 }
