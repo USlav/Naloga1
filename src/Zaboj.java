@@ -7,19 +7,12 @@ public class Zaboj {
     private LocalDate datumOdposlanja;
     private Artikel[] seznamArtiklov = new Artikel[5];
 
-    /*
-     * private Zaboj() {
-     * }
-     */
-
-    private Zaboj(String naziv, Dimenzije dimenzije) {
-        this.naziv = naziv;
-        this.dimenzije = dimenzije;
+    public Zaboj() {
     }
 
-    public Zaboj(String naziv, Dimenzije dimenzije, LocalDate datumOdposlanja) {
-        this(naziv, dimenzije);
-        this.datumOdposlanja = datumOdposlanja;
+    public Zaboj(String naziv, Dimenzije dimenzije) {
+        this.naziv = naziv;
+        this.dimenzije = dimenzije;
     }
 
     public void dodajArtikel(Artikel artikel) {
@@ -72,15 +65,7 @@ public class Zaboj {
     }
 
     public boolean lahkoNaloziArtikel(Artikel artikel) {
-        int volumenVseh = 0;
-        for (int i = 0; i < seznamArtiklov.length; i++) {
-            if (seznamArtiklov[i] != null) {
-                volumenVseh += seznamArtiklov[i].getDimenzije().izracunajVolumen();
-            }
-        }
-        volumenVseh += artikel.getDimenzije().izracunajVolumen();
-
-        return volumenVseh <= dimenzije.izracunajVolumen();
+        return artikel.getDimenzije().izracunajVolumen() <= dimenzije.izracunajVolumen();
     }
 
     public String toString() {

@@ -5,8 +5,7 @@ public class Zagonski {
         Dimenzije dimenzijeObj = new Dimenzije(4.5, 3.0, 3.0);
         Artikel artikelObj = new Artikel("Laptop lenovo Yoga", dimenzijeObj);
         Dimenzije dimenzijeObjekt = new Dimenzije(3, 3.0, 3.0);
-        // Zaboj zabojObj = new Zaboj("Škatla", dimenzijeObjekt); // ker sem moral
-        // nastaviti druga dva konst. na private
+        Zaboj zabojObj = new Zaboj("Škatla", dimenzijeObjekt);
         Paket paketObj = new Paket("Laptop", LocalDate.now());
         Depo depoObj = new Depo();
 
