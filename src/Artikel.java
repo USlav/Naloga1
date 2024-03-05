@@ -9,6 +9,12 @@ public class Artikel {
         this.dimenzije = dimenzije;
     }
 
+    public Artikel(String naziv, Dimenzije dimenzije, double teza, double cena) {
+        this(naziv, dimenzije);
+        this.teza = teza;
+        this.cena = cena;
+    }
+
     public Dimenzije getDimenzije() {
         return dimenzije;
     }
