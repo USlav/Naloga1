@@ -15,6 +15,7 @@ public class Dimenzije {
         return visina * sirina * dolzina;
     }
 
+    @Override
     public String toString() {
         return "Dimenzije{" + "visina=" + visina + ", sirina=" + sirina + ", dolzina=" + dolzina + '}';
     }

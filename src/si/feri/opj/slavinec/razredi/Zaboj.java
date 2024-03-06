@@ -9,8 +9,10 @@ public class Zaboj {
     private LocalDate datumOdposlanja;
     private Artikel[] seznamArtiklov = new Artikel[5];
 
-    private Zaboj() {
-    }
+    /*
+     * private Zaboj() {
+     * }
+     */
 
     private Zaboj(String naziv, Dimenzije dimenzije) {
         this.naziv = naziv;
@@ -26,6 +28,7 @@ public class Zaboj {
         for (int i = 0; i < seznamArtiklov.length; i++) {
             if (seznamArtiklov[i] == null) {
                 seznamArtiklov[i] = artikel;
+                break;
             } else if (i == seznamArtiklov.length - 1) {
                 System.out.println("Zaboj je poln. Ni mogoče dodati novega artikla.");
             }
@@ -36,6 +39,7 @@ public class Zaboj {
         for (int i = 0; i < seznamArtiklov.length; i++) {
             if (seznamArtiklov[i] == artikel) {
                 seznamArtiklov[i] = null;
+                break;
             } else if (i == seznamArtiklov.length - 1) {
                 System.out.println("Tega artikla ni v zaboju.");
             }
@@ -44,7 +48,7 @@ public class Zaboj {
 
     public boolean odstraniArtikel(String naziv) {
         for (int i = 0; i < seznamArtiklov.length; i++) {
-            if (seznamArtiklov[i].getNaziv() == naziv) {
+            if (seznamArtiklov[i] != null && seznamArtiklov[i].getNaziv().equals(naziv)) {
                 seznamArtiklov[i] = null;
                 return true;
             }
@@ -83,6 +87,7 @@ public class Zaboj {
         return volumenVseh <= dimenzije.izracunajVolumen();
     }
 
+    @Override
     public String toString() {
         return "Zaboj{" + "naziv='" + naziv + '\'' + ", dimenzije=" + dimenzije + ", datumOdposlanja="
                 + datumOdposlanja + ", seznamArtiklov=" + Arrays.toString(seznamArtiklov) + '}';

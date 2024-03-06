@@ -14,6 +14,7 @@ public class Depo {
         this.naziv = naziv;
     }
 
+    @Override
     public String toString() {
         return "Depo{naziv='" + naziv + "\'}";
     }

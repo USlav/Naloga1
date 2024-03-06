@@ -21,6 +21,7 @@ public class Paket {
         this.dragocenost = dragocenost;
     }
 
+    @Override
     public String toString() {
         return "Paket{" + "naziv='" + naziv + '\'' + ", dimenzije=" + dimenzije + ", dragocenost=" + dragocenost
                 + ", datumOdposlanja="

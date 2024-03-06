@@ -33,6 +33,7 @@ public class Artikel {
         this.cena = cena;
     }
 
+    @Override
     public String toString() {
         return "Artikel{" + "naziv='" + naziv + '\'' + ", dimenzije=" + dimenzije + ", teza=" + teza + ", cena=" + cena
                 + '}';
