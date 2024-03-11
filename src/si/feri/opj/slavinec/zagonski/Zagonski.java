@@ -8,6 +8,13 @@ import si.feri.opj.slavinec.razredi.Paket;
 import si.feri.opj.slavinec.razredi.Zaboj;
 import si.feri.opj.slavinec.razredi.Dimenzije;
 
+/**
+ * 
+ * Razred za demonstracijo delovanja
+ *
+ * @author Urh Slavinec
+ * @version 1.0
+ */
 public class Zagonski {
     public static void main(String[] args) {
         Dimenzije dimenzijeArtikel = new Dimenzije(4.5, 3.0, 3.0);
