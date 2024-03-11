@@ -2,19 +2,16 @@ package si.feri.opj.slavinec.razredi;
 
 import java.time.LocalDate;
 
-public class Paket {
-    private String naziv;
-    private Dimenzije dimenzije;
+public class Paket extends Posiljka {
     private boolean dragocenost;
-    private LocalDate datumOdposlanja;
 
-    public Paket() {
-
-    }
+    /*
+     * public Paket() {
+     * }
+     */
 
     public Paket(String naziv, LocalDate datumOdposlanja) {
-        this.naziv = naziv;
-        this.datumOdposlanja = datumOdposlanja;
+        super(naziv, datumOdposlanja);
     }
 
     public void setDragocenost(boolean dragocenost) {
@@ -23,9 +20,10 @@ public class Paket {
 
     @Override
     public String toString() {
-        return "Paket{" + "naziv='" + naziv + '\'' + ", dimenzije=" + dimenzije + ", dragocenost=" + dragocenost
+        return "Paket{" + "naziv='" + getNaziv() + '\'' + ", dimenzije=" + getDimenzije() + ", dragocenost="
+                + dragocenost
                 + ", datumOdposlanja="
-                + datumOdposlanja + '}';
+                + getDatumOdposlanja() + '}';
 
     }
 }
