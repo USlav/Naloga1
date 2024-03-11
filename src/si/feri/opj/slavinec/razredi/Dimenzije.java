@@ -1,16 +1,23 @@
 package si.feri.opj.slavinec.razredi;
 
+/**
+ * 
+ * Razred Dimenzije
+ *
+ * @author Urh Slavinec
+ * @version 1.0
+ */
 public class Dimenzije {
     private double visina;
     private double sirina;
     private double dolzina;
 
     /**
-     * Konstruktor razreda dimenzije z parametri:
+     * Konstruktor razreda dimenzije
      * 
-     * @param visina
-     * @param sirina
-     * @param dolzina
+     * @param visina  visina artikla oz. zaboja
+     * @param sirina  sirina artikla oz.zaboja
+     * @param dolzina dolzinia artikla oz.zaboja
      */
     public Dimenzije(double visina, double sirina, double dolzina) {
         this.visina = visina;
@@ -21,7 +28,7 @@ public class Dimenzije {
     /**
      * metoda ki vrne volumen
      * 
-     * @return
+     * @return vrne rezultat tipa double
      */
     public double izracunajVolumen() {
         return visina * sirina * dolzina;
