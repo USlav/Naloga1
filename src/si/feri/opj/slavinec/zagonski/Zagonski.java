@@ -1,7 +1,6 @@
 package si.feri.opj.slavinec.zagonski;
 
 import java.time.LocalDate;
-import java.util.Arrays;
 
 import si.feri.opj.slavinec.razredi.Artikel;
 import si.feri.opj.slavinec.razredi.Depo;
