@@ -9,18 +9,18 @@ public class Posiljka {
     private LocalDate datumOdposlanja;
     private Artikel[] seznamArtiklov;
 
-    private Posiljka() {
-        seznamArtiklov = new Artikel[5];
+    public Posiljka() {
+
     }
 
     public Posiljka(String naziv, Dimenzije dimenzije, LocalDate datumOdposlanja) {
-        this();
-        this.naziv = naziv;
+        this(naziv, datumOdposlanja);
         this.dimenzije = dimenzije;
-        this.datumOdposlanja = datumOdposlanja;
+
     }
 
     public Posiljka(String naziv, LocalDate datumOdposlanja) {
+        seznamArtiklov = new Artikel[5];
         this.naziv = naziv;
         this.datumOdposlanja = datumOdposlanja;
     }

@@ -1,5 +1,7 @@
 package si.feri.opj.slavinec.razredi;
 
+import java.util.Arrays;
+
 public abstract class Depo {
     private String naziv;
     private String lokacija;
@@ -8,18 +10,21 @@ public abstract class Depo {
     public Depo() {
     }
 
-    public Depo(String naziv) {
-
-        this.naziv = naziv;
-    }
-
-    public Depo(String naziv, String lokacija) {
-        this.naziv = naziv;
-        this.lokacija = lokacija;
-    }
+    /*
+     * public Depo(String naziv) {
+     * 
+     * this.naziv = naziv;
+     * }
+     * 
+     * public Depo(String naziv, String lokacija) {
+     * this.naziv = naziv;
+     * this.lokacija = lokacija;
+     * }
+     */
 
     public Depo(String naziv, String lokacija, int stPosiljk) {
-        this(naziv, lokacija);
+        this.naziv = naziv;
+        this.lokacija = lokacija;
         seznamPosiljk = new Posiljka[stPosiljk];
 
     }
@@ -57,41 +62,7 @@ public abstract class Depo {
 
     @Override
     public String toString() {
-        return "Depo{naziv='" + naziv + "\'}";
-    }
-}
-
-class PremiumSkladisce extends Depot {
-    // Razredni atributi
-    private boolean kamera;
-
-    // Konstruktor
-    public PremiumSkladisce(String naziv, String lokacija, int stPosiljk, boolean kamera) {
-        super(naziv, lokacija);
-        this.kamera = kamera;
-    }
-
-    // Implementacija abstraktne metode za preračun osnovne cene skladiščenja
-    @Override
-    public double vrniCenoSkladiscenja() {
-        // Implementacija cene skladiščenja za premium skladišče
-        // Dummy implementation za prikaz
-        return 50; // Predpostavimo fiksno ceno za premium skladišče
-    }
-}
-
-// Podrazred Skladisce
-class Skladisce extends Depot {
-    // Konstruktor
-    public Skladisce(String naziv, String lokacija, int stPosiljk) {
-        super(naziv, lokacija);
-    }
-
-    // Implementacija abstraktne metode za preračun osnovne cene skladiščenja
-    @Override
-    public double vrniCenoSkladiscenja() {
-        // Implementacija cene skladiščenja za običajno skladišče
-        // Dummy implementation za prikaz
-        return 30; // Predpostavimo fiksno ceno za običajno skladišče
+        return "Depo [naziv=" + naziv + ", lokacija=" + lokacija + ", seznamPosiljk=" + Arrays.toString(seznamPosiljk)
+                + "]";
     }
 }
