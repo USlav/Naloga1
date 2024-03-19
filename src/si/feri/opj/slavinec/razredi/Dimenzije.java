@@ -38,4 +38,16 @@ public class Dimenzije {
     public String toString() {
         return "Dimenzije{" + "visina=" + visina + ", sirina=" + sirina + ", dolzina=" + dolzina + '}';
     }
+
+    public double getVisina() {
+        return visina;
+    }
+
+    public double getSirina() {
+        return sirina;
+    }
+
+    public double getDolzina() {
+        return dolzina;
+    }
 }

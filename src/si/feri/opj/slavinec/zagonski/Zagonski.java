@@ -19,7 +19,7 @@ public class Zagonski {
         Paket paketObj = new Paket("Laptop", LocalDate.now());
         Artikel artikelObj = new Artikel("Laptop lenovo Yoga", dimenzijeArtikel);
         Artikel artikelObj2 = new Artikel("Telefon S20", dimenzijeArtikel, 0.2, 900.0);
-
+        // dimenzije vozila???
         int stPosiljk = 5;
         Depo depo;
         depo = new PremiumSkladisce("Gorenje", "Velenje", stPosiljk, true);

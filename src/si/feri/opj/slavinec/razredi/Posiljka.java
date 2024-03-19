@@ -3,7 +3,7 @@ package si.feri.opj.slavinec.razredi;
 import java.time.LocalDate;
 import java.util.Arrays;
 
-public class Posiljka {
+public class Posiljka implements Transportni {
     private String naziv;
     private Dimenzije dimenzije;
     private LocalDate datumOdposlanja;
@@ -22,6 +22,25 @@ public class Posiljka {
         this();
         this.naziv = naziv;
         this.datumOdposlanja = datumOdposlanja;
+    }
+
+    public boolean lahkoNatovori(Dimenzije dimenzijeVozila) {
+        double skupnaDolzina = 0;
+        double skupnaVisina = 0;
+        double skupnaSirina = 0;
+
+        for (Artikel artikel : seznamArtiklov) {
+            if (artikel != null) {
+                skupnaDolzina += artikel.getDimenzije().getDolzina();
+                skupnaVisina += artikel.getDimenzije().getVisina();
+                skupnaSirina += artikel.getDimenzije().getSirina();
+            }
+        }
+        if (skupnaDolzina < dimenzijeVozila.getDolzina() && skupnaSirina < dimenzijeVozila.getSirina()
+                && skupnaVisina < dimenzijeVozila.getVisina()) {
+            return true;
+        }
+        return false;
     }
 
     public void dodajArtikel(Artikel artikel) {

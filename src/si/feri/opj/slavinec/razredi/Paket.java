@@ -17,6 +17,10 @@ public class Paket extends Posiljka {
         this.dragocenost = dragocenost;
     }
 
+    public boolean getDragocenost() {
+        return dragocenost;
+    }
+
     @Override
     public String toString() {
         return "Paket{" + "naziv='" + getNaziv() + '\'' + ", dimenzije=" + getDimenzije() + ", dragocenost="

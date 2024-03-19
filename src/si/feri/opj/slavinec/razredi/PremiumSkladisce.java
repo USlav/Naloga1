@@ -3,6 +3,14 @@ package si.feri.opj.slavinec.razredi;
 public class PremiumSkladisce extends Depo {
     private boolean kamera;
 
+    public boolean getKamera() {
+        return kamera;
+    }
+
+    public PremiumSkladisce() {
+
+    }
+
     public PremiumSkladisce(String naziv, String lokacija, int stPosiljk, boolean kamera) {
         super(naziv, lokacija, stPosiljk);
         this.kamera = kamera;
