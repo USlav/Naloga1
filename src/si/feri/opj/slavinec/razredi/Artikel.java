@@ -6,6 +6,10 @@ public class Artikel {
     private double teza;
     private double cena;
 
+    public double getCena() {
+        return cena;
+    }
+
     public Artikel(String naziv, Dimenzije dimenzije) {
         this.naziv = naziv;
         this.dimenzije = dimenzije;

@@ -7,20 +7,12 @@ public abstract class Depo {
     private String lokacija;
     private Posiljka[] seznamPosiljk;
 
-    public Depo() {
+    public Posiljka[] getSeznamPosiljk() {
+        return seznamPosiljk;
     }
 
-    /*
-     * public Depo(String naziv) {
-     * 
-     * this.naziv = naziv;
-     * }
-     * 
-     * public Depo(String naziv, String lokacija) {
-     * this.naziv = naziv;
-     * this.lokacija = lokacija;
-     * }
-     */
+    public Depo() {
+    }
 
     public Depo(String naziv, String lokacija, int stPosiljk) {
         this.naziv = naziv;
@@ -41,7 +33,8 @@ public abstract class Depo {
     }
 
     public double vrniZasedenost() {
-        return (vrniSteviloShranjenihPosiljk() / seznamPosiljk.length) * 100;
+        double a = this.vrniSteviloShranjenihPosiljk();
+        return (a / seznamPosiljk.length) * 100;
     }
 
     public int vrniSteviloShranjenihPosiljk() {

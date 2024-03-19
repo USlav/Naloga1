@@ -10,17 +10,16 @@ public class Posiljka {
     private Artikel[] seznamArtiklov;
 
     public Posiljka() {
-
+        seznamArtiklov = new Artikel[5];
     }
 
     public Posiljka(String naziv, Dimenzije dimenzije, LocalDate datumOdposlanja) {
         this(naziv, datumOdposlanja);
         this.dimenzije = dimenzije;
-
     }
 
     public Posiljka(String naziv, LocalDate datumOdposlanja) {
-        seznamArtiklov = new Artikel[5];
+        this();
         this.naziv = naziv;
         this.datumOdposlanja = datumOdposlanja;
     }

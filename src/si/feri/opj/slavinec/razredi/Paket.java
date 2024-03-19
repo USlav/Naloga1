@@ -5,10 +5,9 @@ import java.time.LocalDate;
 public class Paket extends Posiljka {
     private boolean dragocenost;
 
-    /*
-     * public Paket() {
-     * }
-     */
+    public Paket() {
+        super();
+    }
 
     public Paket(String naziv, LocalDate datumOdposlanja) {
         super(naziv, datumOdposlanja);

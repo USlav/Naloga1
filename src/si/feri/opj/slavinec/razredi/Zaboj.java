@@ -3,22 +3,12 @@ package si.feri.opj.slavinec.razredi;
 import java.time.LocalDate;
 import java.util.Arrays;
 
-enum OznakaZaboja {
-    LOMLJIVO,
-    VNETLJIVO,
-    BIOLOSKI
-}
-
 public class Zaboj extends Posiljka {
     private OznakaZaboja oznaka;
 
     public Zaboj(OznakaZaboja oznaka) {
         super();
         this.oznaka = oznaka;
-    }
-
-    public OznakaZaboja getOznaka() {
-        return oznaka;
     }
 
     public void setOznaka(OznakaZaboja oznaka) {
